@@ -2,13 +2,13 @@
   "name": "kolatts-marketplace",
   "version": "1.0.0",
   "description": "Personal Claude Code plugin marketplace by kolatts",
-  "owner": "kolatts",
+  "owner": { "name": "kolatts" },
   "repository": "https://github.com/kolatts/claude-marketplace",
   "keywords": ["workflow", "productivity", "writing", "communication"],
   "plugins": [
     {
       "name": "sunny",
-      "path": "./plugins/sunny",
+      "source": "./plugins/sunny",
       "description": "Personal developer workflow toolkit — commits, code review, scaffolding, and writing in your voice",
       "keywords": ["workflow", "git", "writing", "scaffold", "review"]
     }
