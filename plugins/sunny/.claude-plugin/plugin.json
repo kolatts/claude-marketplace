@@ -1,0 +1,35 @@
+{
+  "name": "sunny",
+  "version": "1.0.0",
+  "description": "Personal developer workflow toolkit — smart commits, code review, project scaffolding, and writing in your voice",
+  "author": "kolatts",
+  "license": "MIT",
+  "keywords": ["workflow", "git", "commit", "review", "scaffold", "writing"],
+  "skills": [
+    {
+      "name": "commit",
+      "path": "./skills/commit/SKILL.md",
+      "description": "Analyze git changes and generate a conventional commit message"
+    },
+    {
+      "name": "review",
+      "path": "./skills/review/SKILL.md",
+      "description": "Review changed files for bugs, security issues, and code quality"
+    },
+    {
+      "name": "scaffold",
+      "path": "./skills/scaffold/SKILL.md",
+      "description": "Scaffold a new project from a template type"
+    },
+    {
+      "name": "write-formal",
+      "path": "./skills/write-formal/SKILL.md",
+      "description": "Draft formal communications in your voice"
+    },
+    {
+      "name": "write-casual",
+      "path": "./skills/write-casual/SKILL.md",
+      "description": "Draft casual communications in your voice"
+    }
+  ]
+}
