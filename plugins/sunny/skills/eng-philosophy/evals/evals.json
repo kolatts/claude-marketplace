@@ -1,0 +1,104 @@
+{
+  "skill_name": "sunny:eng-philosophy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our engineering manager wants to start tracking lines of code per developer to show productivity to leadership. How do I push back on this?",
+      "expected_output": "A direct, opinionated response grounded in the cobra effect / Goodhart's law framework from metrics.md. Should name the failure mode specifically, explain why it backfires, and give a specific alternative recommendation.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "names-cobra-or-goodhart",
+          "description": "Explicitly names the cobra effect or Goodhart's law as the framework",
+          "type": "regex",
+          "pattern": "cobra|goodhart",
+          "flags": "i"
+        },
+        {
+          "name": "explains-loc-failure-mode",
+          "description": "Explains specifically why LOC is a bad metric (not just 'it's bad', but how it backfires)",
+          "type": "qualitative",
+          "rubric": "Does the response explain *how* tracking LOC backfires — e.g. that it incentivizes verbose code, that it's easily gamed, that it measures effort not value? Not just 'LOC is not a good metric.'"
+        },
+        {
+          "name": "offers-concrete-alternative",
+          "description": "Proposes a specific alternative metric or approach, not just 'there are better metrics'",
+          "type": "qualitative",
+          "rubric": "Does the response give the user something actionable — a specific alternative metric to propose, a framing to use with leadership, or a concrete approach to replace LOC tracking?"
+        },
+        {
+          "name": "direct-not-hedging",
+          "description": "Response is direct and confident — takes a clear position rather than 'well, it depends'",
+          "type": "qualitative",
+          "rubric": "Does the response sound opinionated? It should make a clear recommendation, not hedge excessively or present a both-sides view."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We had a production incident last week and our postmortem turned into a blame session pointing at one developer. How should we be running these?",
+      "expected_output": "Response grounded in the blame.md framework: accountability vs. blame distinction, Google SRE 'fix systems not people' principle, what a good postmortem actually looks at. Direct and opinionated.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "names-blame-vs-accountability",
+          "description": "Explicitly distinguishes blame (past-focused, destructive) from accountability (forward-looking)",
+          "type": "qualitative",
+          "rubric": "Does the response draw a clear contrast between blame (looking backward at who did it) and accountability (looking forward at how to fix the system)? This distinction should be explicit."
+        },
+        {
+          "name": "references-systems-thinking",
+          "description": "Frames the problem in terms of system/process failures, not individual failures",
+          "type": "qualitative",
+          "rubric": "Does the response apply a 'fix the system, not the person' lens? It should argue that the postmortem should focus on what process, tooling, or system allowed the bug through — not who made the mistake."
+        },
+        {
+          "name": "gives-specific-postmortem-guidance",
+          "description": "Provides concrete guidance on what a good postmortem looks like",
+          "type": "qualitative",
+          "rubric": "Does the response give actionable, specific guidance for running better postmortems? Not just 'be more kind', but what questions to ask, what to document, how to structure the meeting."
+        },
+        {
+          "name": "references-google-sre-or-similar",
+          "description": "Cites Google SRE, blameless postmortems, or a named framework",
+          "type": "regex",
+          "pattern": "google sre|sre|blameless|netflix|systems",
+          "flags": "i"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Help me write a short talk (15 minutes) for our engineering all-hands about why we need to get serious about having ONE priority instead of ten.",
+      "expected_output": "A structured talk outline or draft using Sunny's blog format: strong hook, analogy (point-buy or similar), section breakdown, practical conclusion. Should be ready to present.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "has-structured-sections",
+          "description": "Output is structured with sections/slides/parts — not a wall of text",
+          "type": "regex",
+          "pattern": "^(##|\\*\\*|Slide|Section|Part|[0-9]+\\.)",
+          "flags": "m"
+        },
+        {
+          "name": "uses-point-buy-or-priority-analogy",
+          "description": "Uses the point-buy analogy or Essentialism 'priority was singular' concept",
+          "type": "qualitative",
+          "rubric": "Does the talk include the point-buy / D&D analogy (tradeoffs with diminishing returns), the Essentialism insight that 'priority' was singular for 500 years, or a similar reframing analogy? This is what makes the talk memorable."
+        },
+        {
+          "name": "addresses-what-to-deprioritize",
+          "description": "Addresses that the hard part is naming what NOT to do, not just what to focus on",
+          "type": "qualitative",
+          "rubric": "Does the talk make the point that leaders are good at declaring priorities but bad at explicitly deprioritizing? The key insight is that you must name what you'll do less of, not just more of."
+        },
+        {
+          "name": "talk-length-appropriate",
+          "description": "Content is scoped to roughly 15 minutes of speaking (not a 2-minute sketch, not a 45-minute lecture)",
+          "type": "qualitative",
+          "rubric": "Is this reasonably sized for a 15-minute talk? It should have enough substance to fill the time but not be overwhelming. Rough guide: 5-8 sections/slides, each with a few talking points."
+        }
+      ]
+    }
+  ]
+}
