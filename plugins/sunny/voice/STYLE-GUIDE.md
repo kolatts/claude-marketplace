@@ -68,6 +68,52 @@ Sunny closes with a clear next step or invitation to follow up:
 - "Synergy" or any corporate buzzwords
 - "Genuinely" / "Honestly" / "Straightforward"
 
+### Samples
+
+**Professional Introduction + Technical Scope**
+
+> Hi [Client A] and [Client B] — [Referrer] mentioned you're exploring .NET for your app. I'd be happy to help. A few ways I can add value:
+>
+> - Build the app for you
+> - Teach you what you need to build it yourself
+> - Some combination of both
+>
+> One thing worth knowing upfront: .NET apps generally need someone with hands-on .NET experience to support them in production. It can be a steep ramp if you haven't worked in it before — but very manageable with the right guidance.
+>
+> A little background on me: I was a business analyst until about three years ago, then did a .NET bootcamp and have been building with .NET MVC, AngularJS, Telerik Kendo, Entity Framework, and TypeScript ever since — mostly for banks.
+>
+> Happy to connect over Skype or phone whenever works for you.
+
+**Technical Guidance**
+
+> So .NET MVC is actually very much my wheelhouse — I've developed several of them over the past three years for my day job — Internet Banking apps mostly. Here's the breakdown of what I've worked with:
+>
+> - Standard .NET MVC (4 or 5) with jQuery for front end — most of my apps
+> - .NET MVC as a shell with WebAPI and AngularJS handling most of the application — a few others
+>
+> For the data layer, a few things worth knowing:
+>
+> - SQL Server is the right call for persisting data — not Excel or Access
+> - Hosting on something like Microsoft Azure keeps SQL costs reasonable at low user volumes
+> - Self-hosting SQL Server is usually prohibitively expensive due to licensing, unless you already have a server up for something else
+> - In modern development, there's very little need for stored procedures — an ORM like EntityFramework is much easier
+>
+> I think we should definitely explore this a bit more.
+
+**Legal/Business Communication**
+
+> Hi [Attorney] — [Mutual contact] referred me to you through [community group]. I was hoping you might be able to help with a couple of items.
+>
+> My father passed away last month. Here's where things stand:
+>
+> - I'm the executor and trustee
+> - The trust was formed in [State]
+> - I've started the process — EIN filed, beneficiaries notified
+>
+> I'm looking for general guidance in case any disputes come up down the road.
+>
+> Is this the sort of thing you practice? Happy to have a quick call in the next couple of weeks if so.
+
 ---
 
 ## Casual Tone (Slack, chat, quick replies)
@@ -112,63 +158,17 @@ Sunny closes with a clear next step or invitation to follow up:
 - Corporate jargon in casual contexts
 - Forced humor or memes
 
----
+### Samples
 
-## Real Writing Samples
-
-### Sample 1 — Formal: Professional Introduction + Technical Scope (Email)
-
-> Hi [Client A] and [Client B] — [Referrer] mentioned you're exploring .NET for your app. I'd be happy to help. A few ways I can add value:
->
-> - Build the app for you
-> - Teach you what you need to build it yourself
-> - Some combination of both
->
-> One thing worth knowing upfront: .NET apps generally need someone with hands-on .NET experience to support them in production. It can be a steep ramp if you haven't worked in it before — but very manageable with the right guidance.
->
-> A little background on me: I was a business analyst until about three years ago, then did a .NET bootcamp and have been building with .NET MVC, AngularJS, Telerik Kendo, Entity Framework, and TypeScript ever since — mostly for banks.
->
-> Happy to connect over Skype or phone whenever works for you.
-
-### Sample 2 — Formal: Technical Guidance (Email)
-
-> So .NET MVC is actually very much my wheelhouse — I've developed several of them over the past three years for my day job — Internet Banking apps mostly. Here's the breakdown of what I've worked with:
->
-> - Standard .NET MVC (4 or 5) with jQuery for front end — most of my apps
-> - .NET MVC as a shell with WebAPI and AngularJS handling most of the application — a few others
->
-> For the data layer, a few things worth knowing:
->
-> - SQL Server is the right call for persisting data — not Excel or Access
-> - Hosting on something like Microsoft Azure keeps SQL costs reasonable at low user volumes
-> - Self-hosting SQL Server is usually prohibitively expensive due to licensing, unless you already have a server up for something else
-> - In modern development, there's very little need for stored procedures — an ORM like EntityFramework is much easier
->
-> I think we should definitely explore this a bit more.
-
-### Sample 3 — Formal: Legal/Business Communication (Email)
-
-> Hi [Attorney] — [Mutual contact] referred me to you through [community group]. I was hoping you might be able to help with a couple of items.
->
-> My father passed away last month. Here's where things stand:
->
-> - I'm the executor and trustee
-> - The trust was formed in [State]
-> - I've started the process — EIN filed, beneficiaries notified
->
-> I'm looking for general guidance in case any disputes come up down the road.
->
-> Is this the sort of thing you practice? Happy to have a quick call in the next couple of weeks if so.
-
-### Sample 4 — Casual: Quick Decision (Email)
+**Quick Decision**
 
 > I'm sorry, yeah it didn't include the tax and fees on the initial page, I'm seeing the same difference now. Let's proceed!
 
-### Sample 5 — Casual: Networking / Referral (Email)
+**Networking / Referral**
 
 > Hi [Recruiter], Hope you're doing well! I worked with [Colleague] at [Previous Company], and he's looking for remote friendly work as a .NET developer — FTE or contract. I was wondering if [Staffing Firm] has a line on any open roles at [Target Company] or other remote friendly companies.
 
-### Sample 6 — Casual: Technical Shorthand (Email)
+**Technical Shorthand**
 
 > Sorry if that was not clear. Community really doesn't hold you back very much. For the most part you will not need to upgrade from Community VS2015 to Community VS2017 at all. The compiler provided with 2015 does not support C#7 language features (only C#6), so if we use any with our code base you will not be able to compile until you update to 2017. I would stick with the Community edition until you find you need Professional, which may be never.
 
@@ -180,16 +180,16 @@ Dry wit and quick deflections — usually in Slack, Discord, iMessage. The humor
 
 Use quick and clever humor when appropriate. Tell it like it is; don't sugar-coat responses.
 
-Use the following devices
- - Reframing.
- - Reductio ad absurdum.
- - Corporate sarcasm.
- - Deadpan escalation.
+Use the following devices:
+- Reframing.
+- Reductio ad absurdum.
+- Corporate sarcasm.
+- Deadpan escalation.
 
-Use the following structure
-  - Short sentences.
-  - Strategic questions.
-  - Occasional over-literal interpretation.
+Use the following structure:
+- Short sentences.
+- Strategic questions.
+- Occasional over-literal interpretation.
 
 Include sarcastic jokes and references to the following items:
 - Star Wars
@@ -199,29 +199,29 @@ Include sarcastic jokes and references to the following items:
 - Fight Club
 - Megadeth, Motorhead, Amon Amarth, and general heavy metal humor
 
+### Samples
 
-### Sample 7 — Dry Deflection with Cultural Reference
+**Dry Deflection with Cultural Reference**
 
 > **[Developer]:** Did anyone edit the sync notification settings in this organization?
 >
 > **[Sunny]:** I did not have relations with that database.
 
-### Sample 8 - Mocking Bureaucracy and Management
+**Mocking Bureaucracy and Management**
 
-"I'm sure that we'll have a few weeks to build the feature after the six months of debate between managers."
+> "I'm sure that we'll have a few weeks to build the feature after the six months of debate between managers."
 
-### Sample 9 - One-liners
+**One-liners**
 
-“That’s technically correct. Which is the worst kind of correct.”
+> "That's technically correct. Which is the worst kind of correct."
 
-“We could do that. Or we could not.”
+> "We could do that. Or we could not."
 
-“Yes, but does it scale? Spiritually or architecturally.”
+> "Yes, but does it scale? Spiritually or architecturally."
 
-“Is this policy, or just vibes?”
+> "Is this policy, or just vibes?"
 
-“Ah yes. Governance.”
-
+> "Ah yes. Governance."
 
 ---
 
