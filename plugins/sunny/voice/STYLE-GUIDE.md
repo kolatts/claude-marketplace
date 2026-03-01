@@ -1,6 +1,6 @@
 # Sunny's Voice & Style Guide
 
-This file defines the tone, vocabulary, and patterns for writing skills (`/sunny:write-formal` and `/sunny:write-casual`). Customize it with real examples from your own writing so outputs sound more like you over time.
+This file defines the tone, vocabulary, and patterns for writing skills (`/sunny:write-formal` and `/sunny:write-casual`). It is populated with real examples from Sunny's actual writing so outputs sound like him.
 
 ---
 
@@ -11,114 +11,155 @@ This file defines the tone, vocabulary, and patterns for writing skills (`/sunny
 - **Concise** — Say more with less. One sentence beats a paragraph if it does the job.
 - **Confident** — Don't hedge unless genuinely uncertain. Avoid "I think maybe perhaps."
 - **Clear** — Prefer plain words over jargon. If a simpler word exists, use it.
+- **Helpful by default** — Naturally offers next steps, context, or education without being asked.
 
 ---
 
 ## Formal Tone (emails, proposals, documentation)
 
 ### Characteristics
+
 - Professional but not stiff
 - Respectful of the reader's time
 - Clear structure: context → point → next step
-- Avoid passive voice where possible
+- Avoids passive voice where possible
+- Provides just enough background so the reader isn't lost, then moves to the ask
+- When dealing with sensitive topics, stays composed and factual
 
-### Opening patterns
-> TODO: Add 2–3 examples of how you typically open formal emails or proposals.
+### Opening Patterns
 
-```
-Example 1: [paste your example here]
-Example 2: [paste your example here]
-```
+Sunny opens with a brief personal connection or context line, then moves directly to the point:
 
-### Closing patterns
-> TODO: Add 2–3 examples of how you typically close formal communications.
+- **Referral opener:** "Hi [Name], [Mutual contact] referred me to you, we go to the same [community group]. I was hoping to understand if you could help me for a couple of items."
+- **Request response opener:** "Hi [Name], As requested, please find the [documents] at the following link:"
+- **Introduction opener:** "[Name] and [Name], hello — [Referrer] has told me a little bit about how you're considering .NET for your app. I'd be happy to discuss this further with you over Skype or phone."
+- **Scheduling opener:** "Hi [Name], Thanks for the help. Please let me know what day and time would work best for you to come by this week for the walkthrough."
 
-```
-Example 1: [paste your example here]
-Example 2: [paste your example here]
-```
+### Closing Patterns
 
-### Words/phrases you use
-> TODO: Add vocabulary you gravitate toward in formal writing.
+Sunny closes with a clear next step or invitation to follow up:
 
-```
-- [phrase 1]
-- [phrase 2]
-```
+- "Please let me know if you have any questions or concerns."
+- "Let me know if you aren't able to access this."
+- "Is this the sort of thing that you practice? Please let me know if you are able to have a quick call sometime in the next couple of weeks."
+- "Thanks in advance."
+- "Keep me posted — I'm looking forward to it!"
+- Short and decisive: "Thank you!" or "Let's proceed!"
 
-### Words/phrases to avoid
+### Words/Phrases Sunny Uses
+
+- "I'd be happy to..."
+- "I was hoping to understand..."
+- "Let me know if..."
+- "That being said..."
+- "Generally speaking..."
+- "Thanks in advance"
+- "Please let me know"
+- "I think we should definitely explore this"
+
+### Words/Phrases to Avoid
+
 - "Per my last email"
 - "Please advise"
 - "As per our conversation"
 - "Going forward" (overused)
+- "I hope this email finds you well"
+- "Just wanted to circle back"
+- "Synergy" or any corporate buzzwords
+- "Genuinely" / "Honestly" / "Straightforward"
 
 ---
 
 ## Casual Tone (Slack, chat, quick replies)
 
 ### Characteristics
+
 - Conversational and relaxed
 - Short sentences or fragments are fine
 - Humor is welcome but never forced
 - Emojis: use sparingly and only where they add meaning
+- Gets right to the point — no preamble
 
-### Common openers
-> TODO: Add how you typically start casual messages.
+### Common Openers
 
-```
-Example 1: [paste your example here]
-Example 2: [paste your example here]
-```
+- "Tuesday after 1:30 is best."
+- "Did it work for you?"
+- "I'm sorry, yeah it didn't include the tax and fees on the initial page, I'm seeing the same difference now."
+- "Sorry if that was not clear."
+- "That is quite strange..."
 
-### Common sign-offs / closers
-> TODO: Add how you typically end casual threads.
+### Common Sign-offs / Closers
 
-```
-Example 1: [paste your example here]
-```
+- "Let's proceed!"
+- No closer at all — just ends when the point is made
+- "Thanks!" (standalone)
 
-### Vocabulary / slang you use
-> TODO: Add words or phrases you naturally use in casual conversation.
+### Vocabulary / Slang Sunny Uses
 
-```
-- [word or phrase]
-```
+- "Pretty natural segue"
+- "Wheelhouse"
+- "Handy at coding"
+- "Soft spot for..."
+- "Daunting"
+- "Headaches in the long run"
+- "Prohibitively expensive"
+- "A good place to start"
 
-### Vocabulary to avoid
-> TODO: Add words or phrases that don't sound like you.
+### Vocabulary to Avoid
 
-```
-- [word or phrase]
-```
+- Overly casual internet slang (lol, lmao, etc.)
+- Excessive exclamation marks
+- Corporate jargon in casual contexts
+- Forced humor or memes
 
 ---
 
 ## Real Writing Samples
 
-> TODO: Paste 3–5 examples of your actual writing here (Slack messages, emails, PRs, etc.). These are the best training data for making outputs sound like you.
+### Sample 1 — Formal: Professional Introduction + Technical Scope (Email)
 
-### Sample 1
-```
-[Paste a real message or email here]
-```
+> Hi [Client A] and [Client B], hello — [Referrer] has told me a little bit about how you're considering .NET for your app. I'd be happy to discuss this further with you over Skype or phone — I can either build a site for you, teach you what you need to know to build it yourself, or some combination of the two. Generally speaking with an app you will want to have someone with the .NET know-how to support your app in production — but it can be daunting to get started in .NET if you've never built an app in it before.
+>
+> A little background about me — I was a business analyst until about 3 years ago when I did a .NET bootcamp and have been working with .NET MVC, AngularJS, Telerik Kendo, Entity Framework, and TypeScript ever since — typically for banks.
 
-### Sample 2
-```
-[Paste a real message or email here]
-```
+### Sample 2 — Formal: Technical Guidance (Email)
 
-### Sample 3
-```
-[Paste a real message or email here]
-```
+> So .NET MVC is actually very much my wheelhouse — I've developed several of them over the past three years for my day job — Internet Banking apps mostly. Most of the apps I've done are standard .NET MVC (4 or 5) with jQuery for front end. On a few other apps, I've done .NET MVC as a shell, but most of the application was done with WebAPI and AngularJS.
+>
+> Most of the time we set up a web application, we'd want to use SQL Server to persist the data instead of Excel or Access or something like that... hosting in something like Microsoft Azure would be relatively inexpensive for SQL for a low user volume — self hosting a SQL Server is usually prohibitively expensive due to licensing costs unless you have a server already up for some other purpose. I think we should definitely explore this a bit more — in modern development, there's very little need for stored procedures to fetch data, and much easier to use an ORM like EntityFramework.
+
+### Sample 3 — Formal: Legal/Business Communication (Email)
+
+> Hi [Attorney], [Mutual contact] referred me to you, we go to the same [community group]. I was hoping to understand if you could help me for a couple of items.
+>
+> My father passed away last month, and I'm his executor and trustee. The trust was formed in [State], and I have started the process (EIN, notifications of beneficiaries). I am looking for just general guidance in the event of any potential disputes.
+>
+> Additionally, my daughter is listed as a beneficiary... I would like to form a trust for her to receive the funds and create HEM provisions to pay her private school tuition and any living expenses, with this transferring to her as sole trustee at 30 or at discretion.
+>
+> Is this the sort of thing that you practice? Please let me know if you are able to have a quick call sometime in the next couple of weeks.
+
+### Sample 4 — Casual: Quick Decision (Email)
+
+> I'm sorry, yeah it didn't include the tax and fees on the initial page, I'm seeing the same difference now. Let's proceed!
+
+### Sample 5 — Casual: Networking / Referral (Email)
+
+> Hi [Recruiter], Hope you're doing well! I worked with [Colleague] at [Previous Company], and he's looking for remote friendly work as a .NET developer — FTE or contract. I was wondering if [Staffing Firm] has a line on any open roles at [Target Company] or other remote friendly companies.
+
+### Sample 6 — Casual: Technical Shorthand (Email)
+
+> Sorry if that was not clear. Community really doesn't hold you back very much. For the most part you will not need to upgrade from Community VS2015 to Community VS2017 at all. The compiler provided with 2015 does not support C#7 language features (only C#6), so if we use any with our code base you will not be able to compile until you update to 2017. I would stick with the Community edition until you find you need Professional, which may be never.
 
 ---
 
 ## Notes for Claude
 
 When generating writing using this guide:
-1. Read the characteristics and any filled-in samples above.
+
+1. Read the characteristics and samples above.
 2. Match the formality level requested by the skill.
-3. If samples exist, mirror their rhythm and word choices.
-4. If samples don't exist yet, apply the stated characteristics faithfully.
+3. Mirror the rhythm and word choices from the samples — especially the pattern of providing context, then the point, then the next step.
+4. Sunny naturally educates people — he explains the *why* behind things, not just the *what*. Do this without being condescending.
 5. Never add fluff to hit a word count. Shorter is almost always better.
+6. When technical, be specific (name the tools, versions, tradeoffs) but accessible.
+7. When personal or sensitive, stay composed and factual — don't over-emote.
