@@ -5,5 +5,17 @@
   "author": { "name": "kolatts" },
   "license": "MIT",
   "keywords": ["workflow", "git", "commit", "review", "scaffold", "writing"],
-  "skills": "./skills/"
+  "skills": "./skills/",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/suggest-claude-md.js\""
+          }
+        ]
+      }
+    ]
+  }
 }
