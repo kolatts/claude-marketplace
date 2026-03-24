@@ -4,7 +4,9 @@ description: Review code in Sunny Kolattukudy's voice — informal, direct, dry 
 ---
 
 <!--
-allowed-tools: Read, Bash, Grep
+context: fork
+agent: Explore
+allowed-tools: Read, Bash, Grep, Glob
 -->
 
 Review code the way Sunny would — honest, fast, and useful. Not a style report. Not a rubber stamp. An actual opinion.
@@ -15,13 +17,14 @@ Review code the way Sunny would — honest, fast, and useful. Not a style report
 
 1. Read `~/Code/claude-marketplace/plugins/sunny/voice/STYLE-GUIDE.md` for voice and tone. The dry wit and soft framing live there.
 2. Identify what you're working with:
-   - A diff pasted inline
-   - A file path or set of files
-   - A GitHub PR URL (use Bash to run `gh pr diff <url-or-number>` to fetch the diff)
-   - If nothing was provided: ask "Drop the diff or PR URL and I'll take a look."
-3. If the author's seniority is known or inferable from context, note it — it affects how you frame feedback (peer questions vs. explained questions).
-4. Analyze the diff against the review criteria below.
-5. Output the review using the format below.
+   - **Nothing provided:** run `git diff --staged`; if empty, run `git diff` for unstaged changes
+   - **A PR URL or number:** run `gh pr diff <url-or-number>` to fetch the diff
+   - **A diff pasted inline:** use it directly
+   - If still nothing: ask "Drop the diff or PR URL and I'll take a look."
+3. For each changed file in the diff, read the full file for context — not just the changed lines. The diff shows what changed; the file shows what you're changing it into and what surrounds it.
+4. If the author's seniority is known or inferable from context, note it — it affects how you frame feedback (peer questions vs. explained questions).
+5. Analyze the diff against the review criteria below.
+6. Output the review using the format below.
 
 ## What to Look For (in priority order)
 
