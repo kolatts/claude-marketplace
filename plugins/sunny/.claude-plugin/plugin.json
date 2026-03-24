@@ -1,10 +1,19 @@
 {
   "name": "sunny",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Personal developer workflow toolkit — smart commits, code review, project scaffolding, and writing in your voice",
-  "author": { "name": "kolatts" },
+  "author": {
+    "name": "kolatts"
+  },
   "license": "MIT",
-  "keywords": ["workflow", "git", "commit", "review", "scaffold", "writing"],
+  "keywords": [
+    "workflow",
+    "git",
+    "commit",
+    "review",
+    "scaffold",
+    "writing"
+  ],
   "skills": "./skills/",
   "hooks": {
     "SessionStart": [
