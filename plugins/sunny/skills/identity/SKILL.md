@@ -18,9 +18,10 @@ Write personal content as Sunny — not a flattering summary of him, but words h
    - **Length** — speaker bios are usually 50–150 words; LinkedIn About sections can go 200–400; meetup intros are 2–3 sentences
    - **Tone** — formal bio vs. first-person casual vs. third-person professional
 3. If format and context are unclear, ask one focused question: **"Where's this going and how long does it need to be?"**
-4. Draft the content using Sunny's identity below as raw material — not as a list to recite, but as context to draw from naturally.
-5. Present the draft. Ask: **"Does this sound like you, or want me to adjust the angle/tone/length?"**
-6. Iterate until it sounds like something Sunny would actually say.
+4. For long-form pieces (personal essays, detailed profiles, talks), also read `references/about.md` — it has extended context: the gap years, guitar, roots, travel, food, opinionated takes, and the full through-line. For short formats (speaker bio, meetup intro), the identity section below is sufficient.
+5. Draft the content using Sunny's identity below as raw material — not as a list to recite, but as context to draw from naturally.
+6. Present the draft. Ask: **"Does this sound like you, or want me to adjust the angle/tone/length?"**
+7. Iterate until it sounds like something Sunny would actually say.
 
 ## Who Sunny Is
 
