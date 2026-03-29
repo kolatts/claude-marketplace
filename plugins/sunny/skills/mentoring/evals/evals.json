@@ -1,0 +1,17 @@
+{
+  "skill_name": "sunny:mentoring",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Prep my 1:1 with Marcus. He's a mid-level engineer, been on the team about 8 months. He's solid on execution but I've been noticing he goes quiet when there's ambiguity — picks the first reasonable solution and ships it rather than sitting with the problem space. Wants to grow into a senior role.",
+      "expected_output": "A concise 1:1 brief under 250 words with Pulse, Where they are (Solid/Stretching), Focus, and Questions sections. Should identify execution as solid and problem framing as the stretch. Questions should be concrete and askable.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Prep my 1:1 with Devon. He's been on the team 2 years, mid-level. His work is technically fine but he's been coasting — no initiative, doesn't engage in design discussions, just picks up tickets and closes them. I've brought up growth opportunities twice in the last quarter and he's shrugged them off. Not sure if he's disengaged, burned out, or just comfortable. Need to have a real conversation this time.",
+      "expected_output": "1:1 brief that frames the conversation as fact-finding first. Questions should lead with observation and invite Devon's read before offering a verdict. Should be concise and not include resistance-handling or coaching theory sections.",
+      "files": []
+    }
+  ]
+}
