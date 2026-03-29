@@ -1,0 +1,17 @@
+{
+  "skill_name": "sunny:hiring",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Pre-screen this candidate for a senior .NET engineer role. Here's their LinkedIn: 8 years experience, last 3 years as 'Senior Software Engineer' at a mid-size healthcare SaaS, C# listed prominently, has a GitHub with some public repos but last commit was 2 years ago, no blog or writing, the job title progression is IC → Senior with no apparent scope change.",
+      "expected_output": "Structured pre-screen with explicit Verdict, green flags, yellow/red flags, verbatim screening questions targeting the specific gaps, one-line GitHub note, and a punchy one-line take. Under 200 words.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I just finished interviewing Priya for a mid-level C# role. She handled the async bug assessment really well — spotted the missing await immediately and explained the deadlock risk unprompted. But in the behavioral questions she was pretty surface-level, gave short answers, and seemed uncomfortable when I asked about a time she disagreed with a technical decision. Write up my debrief.",
+      "expected_output": "Hiring debrief with 1-4 numeric rating, one-line tipping point, Technical section referencing the async/await assessment specifically, Non-technical section addressing behavioral depth, and Watch-outs section. Specific evidence only.",
+      "files": []
+    }
+  ]
+}
