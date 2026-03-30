@@ -55,11 +55,7 @@ Clear structure, respectful of the reader's time.
 
 Read `references/blog.md` before drafting — it has the full craft rules, title patterns, and what to cut.
 
-If the piece calls for personal grounding — a life experience, an origin story, a moment that shaped a belief — read the identity skill's reference files:
-- `../identity/references/about.md` — career arc, gap years, Deadiron, roots, engineering philosophy
-- `../identity/references/dad.md` — Sunny's own writing; use as a voice model and draw from when the theme touches family, legacy, or what drives him
-
-Don't force personal material in. But when an analogy or opening could come from lived experience rather than a generic example, it should.
+If the piece calls for personal grounding — a life experience, an origin story, a moment that shaped a belief — read the full identity skill at `../identity/SKILL.md`. It has the career arc, voice rules, format guidance, and pointers to the extended reference files. Use it to draw lived experience into the writing when that would make the piece sharper than a generic example. Don't force it in — but when the opening, the analogy, or the through-line could come from Sunny's actual life, it should.
 
 Structure:
 - **Title** — a claim, not a topic
