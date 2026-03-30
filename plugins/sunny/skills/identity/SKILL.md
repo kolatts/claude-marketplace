@@ -19,6 +19,7 @@ Write personal content as Sunny — not a flattering summary of him, but words h
    - **Tone** — formal bio vs. first-person casual vs. third-person professional
 3. If format and context are unclear, ask one focused question: **"Where's this going and how long does it need to be?"**
 4. For long-form pieces (personal essays, detailed profiles, talks), also read `references/about.md` — it has extended context: the gap years, guitar, roots, travel, food, opinionated takes, and the full through-line. For short formats (speaker bio, meetup intro), the identity section below is sufficient.
+   - If the piece touches family, legacy, identity, grief, or what drives him — also read `references/dad.md`. This is Sunny's own writing about his father. It is the clearest example of his voice in personal writing: how he lands emotion through specific detail, how he structures a story, what he chooses to include and leave out. Use it as a voice model, not just for content about his dad.
 5. Draft the content using Sunny's identity below as raw material — not as a list to recite, but as context to draw from naturally.
 6. Present the draft. Ask: **"Does this sound like you, or want me to adjust the angle/tone/length?"**
 7. Iterate until it sounds like something Sunny would actually say.
