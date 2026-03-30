@@ -18,3 +18,6 @@ yarn-error.log*
 *.log
 .env
 .env.local
+
+# Skill eval workspaces
+plugins/**/skills/**/*-workspace/

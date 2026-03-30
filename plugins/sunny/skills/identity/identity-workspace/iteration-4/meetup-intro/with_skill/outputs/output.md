@@ -1,1 +1,0 @@
-I'm Sunny — Staff Engineer at Verifiable, where I work on healthcare credentialing software. I took a road that went through medical school at Case Western and a melodic thrash metal band before landing in software, which I'm told is not the standard bootcamp story. I'm here to meet people who want to build great things — and people who have tough business problems to solve.
