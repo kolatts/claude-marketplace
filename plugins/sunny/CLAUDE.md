@@ -15,6 +15,13 @@
 - **NEVER commit or push without explicit user review and approval.** Always show the exact command and wait for confirmation. Do not proceed without it.
 - **Never force-push `main` or `master`.**
 
+## Self-Correction Rules
+
+- **Skills are self-healing.** If a skill encounters an issue (wrong output, bad assumptions, broken flow), fix the skill file immediately after resolving it — don't just patch the current response and move on.
+- **CLAUDE.md is a living document.** Every correction the user makes that reveals a pattern (preference, workflow, constraint) should be captured here or in the relevant skill. Don't wait to be asked.
+- **This applies to both repo-scoped and user-scoped skills.** If the fix belongs in `~/.claude/`, update it there. If it belongs in the plugin, update it there.
+- **A correction made twice is a bug.** If you catch yourself making the same mistake, the rule wasn't written down somewhere it would have been read.
+
 ## Communication Style
 
 - Direct, dry wit, no corporate fluff
