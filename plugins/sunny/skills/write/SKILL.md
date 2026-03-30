@@ -55,6 +55,12 @@ Clear structure, respectful of the reader's time.
 
 Read `references/blog.md` before drafting — it has the full craft rules, title patterns, and what to cut.
 
+If the piece calls for personal grounding — a life experience, an origin story, a moment that shaped a belief — read the identity skill's reference files:
+- `../identity/references/about.md` — career arc, gap years, Deadiron, roots, engineering philosophy
+- `../identity/references/dad.md` — Sunny's own writing; use as a voice model and draw from when the theme touches family, legacy, or what drives him
+
+Don't force personal material in. But when an analogy or opening could come from lived experience rather than a generic example, it should.
+
 Structure:
 - **Title** — a claim, not a topic
 - **Opening** — scene, admission, or counterintuitive claim. Not a definition, not a stats dump
