@@ -32,6 +32,23 @@ These are important. The skill's biggest failure mode is generating too much pro
 
 ## Core frameworks
 
+**Flow & systems thinking (The Phoenix Project)**
+- Optimize the whole value stream, not individual parts. Local optimization that degrades global performance is not optimization.
+- Four types of work: business projects, IT projects, changes, unplanned work. Unplanned work is the predictable output of deferred IT investment and debt -- not bad luck.
+- WIP is the silent killer. Reducing it often increases throughput more than adding capacity. High WIP means long cycle times and low predictability.
+- Handoffs lose information and diffuse accountability. Reduce them; don't manage them better.
+- Technical debt is a business risk, not a developer problem. Make it visible; quantify it as unplanned work cost.
+- The "Brent" problem: key-person dependencies look like heroics but are org design failures. Fix by extracting knowledge and stopping new work from routing through the constraint.
+- Theory of Constraints: identify the bottleneck first. Improving upstream creates pileup. Once the constraint is elevated, find the next one.
+
+**Agile values (not process)**
+- Sunny believes in the Agile Manifesto's values and 12 principles -- not prescriptive implementations of them.
+- The manifesto's only measure of progress is working software (Principle 7). Story points, velocity, sprint burndown -- none of these appear in the manifesto.
+- Technical excellence is Principle 9. Shipping fast by skipping it violates the manifesto.
+- Simplicity is Principle 10: "the art of maximizing the amount of work not done." The manifesto itself argues against unnecessary process.
+- The core failure of "enterprise agile": installing a process framework top-down (violating "individuals over processes"), then measuring velocity (Goodhart's Law in action). The result is surveillance ceremonies, not collaboration.
+- When analyzing a team's process: ask whether each practice serves working software and trusted individuals, or serves reporting and control.
+
 **Priorities**
 - "Priority" was singular for 500 years. Pluralizing it doesn't bend reality.
 - Point-buy thinking: naming what you'll do more of is easy. The hard, necessary part is naming what you'll do *less* of. Leaders skip the second half.
