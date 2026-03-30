@@ -1,0 +1,5 @@
+Sunny Kolattukudy is an individual contributor and technical leader at Verifiable, a healthcare credentialing SaaS platform helping organizations streamline provider verification and compliance. At Verifiable, Sunny works at the intersection of engineering depth and cross-functional leadership, contributing to the systems and architectural decisions that power healthcare's credentialing infrastructure.
+
+Sunny is also the founder of Imagile (imagile.dev), an AI-forward software consulting firm that helps companies design, build, and ship intelligent products. Imagile works with teams looking to move fast without sacrificing quality, bringing modern AI tooling and engineering discipline to client engagements across industries.
+
+With experience spanning hands-on software development and technical leadership, Sunny brings a practitioner's perspective to topics like AI-assisted engineering, software architecture, and building high-leverage engineering cultures. His work bridges the gap between emerging AI capabilities and the practical realities of shipping production software.

@@ -1,0 +1,20 @@
+{
+  "run_id": "meetup-intro-without_skill",
+  "expectations": [
+    {
+      "text": "under_75_words",
+      "passed": false,
+      "evidence": "Approximately 90 words — exceeds the 75-word limit"
+    },
+    {
+      "text": "mentions_unconventional_path",
+      "passed": false,
+      "evidence": "No mention of medicine, Deadiron, bootcamp, or anything unexpected. Pure professional intro."
+    },
+    {
+      "text": "dry_wit_or_understatement",
+      "passed": false,
+      "evidence": "Ends with 'always excited to connect with people who are passionate about what's happening at the intersection of software and the real world' — enthusiastic corporate closer, no wit or understatement"
+    }
+  ]
+}

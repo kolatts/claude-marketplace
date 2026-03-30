@@ -1,0 +1,25 @@
+{
+  "run_id": "speaker-bio-with_skill",
+  "expectations": [
+    {
+      "text": "mentions_medicine_or_medical_school",
+      "passed": true,
+      "evidence": "Contains 'medical school' and 'clinical background'"
+    },
+    {
+      "text": "mentions_deadiron_or_music",
+      "passed": true,
+      "evidence": "Contains 'heavy metal band' and 'recorded an album' and 'music'"
+    },
+    {
+      "text": "no_passion_language",
+      "passed": true,
+      "evidence": "No instances of 'passionate about', 'leverages', 'journey', 'seasoned professional', or 'thought leader'"
+    },
+    {
+      "text": "reasonable_length",
+      "passed": true,
+      "evidence": "107 words — within the 60-180 word target"
+    }
+  ]
+}

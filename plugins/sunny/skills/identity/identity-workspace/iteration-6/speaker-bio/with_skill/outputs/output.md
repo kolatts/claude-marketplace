@@ -1,0 +1,3 @@
+Sunny Kolattukudy is on his third career. He made it through most of medical school at Case Western Reserve University — Cleveland Clinic Lerner College of Medicine — before deciding the system made it harder to help people, not easier. He then co-founded and recorded an album with Deadiron, a melodic thrash metal band. That part is not a metaphor for anything.
+
+Today he's a Staff Engineer at Verifiable, a healthcare credentialing SaaS, where he owns source automation and leads the Developer Experience guild. His focus areas are developer tooling, internal tooling, and AI and software delivery. He also consults through Imagile, his AI-forward software practice.

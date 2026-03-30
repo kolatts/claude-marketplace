@@ -1,0 +1,25 @@
+{
+  "run_id": "linkedin-about-with_skill",
+  "expectations": [
+    {
+      "text": "first_person_voice",
+      "passed": true,
+      "evidence": "Opens with 'I started with C++ and Pascal' — consistent first-person throughout"
+    },
+    {
+      "text": "mentions_impact_not_difficulty",
+      "passed": true,
+      "evidence": "\"What draws me isn't the hardness of a problem. It's what the solution actually does.\" — explicitly frames impact over difficulty"
+    },
+    {
+      "text": "no_buzzwords",
+      "passed": true,
+      "evidence": "No instances of 'leverages', 'passionate about', 'driven by', 'seasoned', 'synergy', 'results-driven', 'thought leader', 'cutting-edge', or 'robust'"
+    },
+    {
+      "text": "mentions_unconventional_path",
+      "passed": true,
+      "evidence": "Full career arc present: medical school, Deadiron, nonprofit, bootcamp — stated plainly and directly"
+    }
+  ]
+}

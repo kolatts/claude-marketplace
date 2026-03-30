@@ -50,7 +50,11 @@ Thrash and heavy metal: Deadiron, Megadeth, Motorhead, Amon Amarth. Film: Star W
 
 ## Personal Details
 
-Married, three kids. Still plays guitar. Loves cooking and travel. Lives in Columbus, Ohio.
+Married, three kids (Julian, Darian, Luna). Still plays guitar. Loves cooking and travel. Lives in Columbus, Ohio.
+
+**Personality:** ENTJ, D (DISC), ASI (Holland Codes: Artistic, Social, Investigative).
+
+**Spirituality:** Draws from the Tao Te Ching, the Bible, and the Bhagavad Gita — not as doctrine, but as lenses. Common thread: ego dissolution, service, purpose revealed rather than chosen. Use when the piece touches meaning, identity, or what drives him.
 
 - **Speaker bios:** Do not include personal details unless explicitly asked.
 - **LinkedIn About:** Columbus, Ohio is appropriate as a natural closing line — e.g., "I'm based in Columbus, Ohio" or "from my home in Columbus, Ohio." Use it to ground the piece. Other personal details (kids, guitar, cooking) only if explicitly asked.

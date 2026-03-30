@@ -1,0 +1,72 @@
+{
+  "expectations": [
+    {
+      "text": "Mentions medical school or Case Western",
+      "passed": true,
+      "evidence": "Output contains: 'medical school at Case Western Reserve University' — direct match on both 'medical school' and 'Case Western'."
+    },
+    {
+      "text": "Mentions Deadiron or music/band",
+      "passed": true,
+      "evidence": "Output contains: 'a melodic thrash metal band called Deadiron' — matches both 'Deadiron' and 'band'."
+    },
+    {
+      "text": "Does not use 'passionate about' or 'leverages'",
+      "passed": true,
+      "evidence": "No occurrences of 'passionate about', 'leverages', 'seasoned', or 'thought leader' anywhere in the output."
+    },
+    {
+      "text": "Uses 'Staff Engineer' title correctly",
+      "passed": true,
+      "evidence": "Output contains: 'Sunny Kolattukudy is a Staff Engineer at Verifiable' — exact match."
+    },
+    {
+      "text": "Frames arc as multiple careers with lightness, not gravitas",
+      "passed": true,
+      "evidence": "Output reads: 'He is on his third career — medical school at Case Western Reserve University, a melodic thrash metal band called Deadiron, and now a decade of building software.' The em-dash list structure is matter-of-fact and breezy, not reverential. No 'came to software by way of', no 'load-bearing', no heroic framing. The clinical background is described as 'directly useful' rather than a sacrifice. Tone is dry and light throughout."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": null,
+  "timing": {
+    "total_duration_seconds": 45.2,
+    "total_tokens": 16682
+  },
+  "claims": [
+    {
+      "claim": "The bio includes Imagile consulting practice",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Output contains: 'He also consults through Imagile, his AI-forward software practice.'"
+    },
+    {
+      "claim": "Bio is written in third person",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Output uses 'He' and 'Sunny Kolattukudy' throughout — consistent third-person voice appropriate for a speaker bio."
+    },
+    {
+      "claim": "The career arc is presented as three distinct phases",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The three careers (medicine, metal band, software) are listed explicitly and distinctly with an em-dash list."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Frames arc as multiple careers with lightness, not gravitas",
+        "reason": "This is the most important assertion and it's manual, which is good. However, the criteria mention avoiding 'came to software by way of' and 'load-bearing' specifically — those are quite narrow. Consider also excluding 'journey' and 'pivoted' as gravitas markers, since the without_skill output used 'pivoting to engineering' which undermines the lightness criterion in a subtle way."
+      },
+      {
+        "reason": "No assertion checks that the bio is written in third person. A LinkedIn About written in first person would pass every assertion here but would be wrong for the speaker bio format."
+      }
+    ],
+    "overall": "Solid eval. The third_career_framing manual assertion is well-constructed and catches real quality signal. Adding a format check (third person) would close the one remaining gap."
+  }
+}

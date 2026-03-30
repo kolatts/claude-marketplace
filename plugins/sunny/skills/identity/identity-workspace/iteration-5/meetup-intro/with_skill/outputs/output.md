@@ -1,0 +1,1 @@
+I'm Sunny — Staff Engineer at Verifiable, where I own source automation and lead the Developer Experience guild. My path here was deliberately unusual: medical school at Case Western, a melodic thrash metal band, and then software — in that order. I'm here to meet fun people that want to build great things — and people that have tough business problems to solve.

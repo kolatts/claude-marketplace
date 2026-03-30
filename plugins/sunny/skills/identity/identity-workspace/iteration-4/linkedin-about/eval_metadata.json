@@ -1,0 +1,37 @@
+{
+  "eval_id": 1,
+  "eval_name": "linkedin-about",
+  "prompt": "Write Sunny's LinkedIn About section.",
+  "assertions": [
+    {
+      "id": "first_person",
+      "description": "Written in first person",
+      "type": "regex",
+      "pattern": "(?i)^I[' ]"
+    },
+    {
+      "id": "impact_not_difficulty",
+      "description": "Mentions impact, not problem difficulty, as the driver",
+      "type": "regex",
+      "pattern": "(?i)(impact|what you made possible|ripples|beyond what)"
+    },
+    {
+      "id": "no_buzzwords",
+      "description": "No corporate buzzwords",
+      "type": "not_regex",
+      "pattern": "(?i)(passionate about|leverages|seasoned|thought leader|driven by|durable culture)"
+    },
+    {
+      "id": "unconventional_path",
+      "description": "Mentions the non-linear path (medicine + music)",
+      "type": "regex",
+      "pattern": "(?i)(medical school|Case Western|Deadiron|melodic thrash)"
+    },
+    {
+      "id": "engineering_org_depth",
+      "description": "Covers what building a good eng org actually requires (tooling, coaching, culture)",
+      "type": "manual",
+      "criteria": "Does the About section go beyond 'I mentored someone' to explain that great engineering requires tooling, coaching, culture, creative solutions, and staying in the work yourself?"
+    }
+  ]
+}

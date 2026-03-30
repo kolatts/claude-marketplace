@@ -1,0 +1,31 @@
+{
+  "eval_id": 2,
+  "eval_name": "linkedin-about",
+  "prompt": "Write Sunny's LinkedIn About section",
+  "assertions": [
+    {
+      "name": "first_person_voice",
+      "description": "Written in first person (uses 'I' as the subject)",
+      "type": "regex",
+      "pattern": "(?m)^I |\\bI've\\b|\\bI'm\\b|\\bI was\\b|\\bI built\\b|\\bI left\\b"
+    },
+    {
+      "name": "mentions_impact_not_difficulty",
+      "description": "Emphasizes impact, not difficulty or challenge for its own sake",
+      "type": "qualitative",
+      "pattern": "Does the text emphasize impact, growing people, or building things that matter — rather than framing the work as impressive because it was hard?"
+    },
+    {
+      "name": "no_buzzwords",
+      "description": "Does not use 'leverages', 'passionate about', 'driven by', 'seasoned', 'synergy', or similar",
+      "type": "not_regex",
+      "pattern": "(?i)(leverages|passionate about|driven by|seasoned|synergy|results-driven|thought leader|cutting-edge|robust)"
+    },
+    {
+      "name": "mentions_unconventional_path",
+      "description": "References the unconventional career path",
+      "type": "qualitative",
+      "pattern": "Does the text reference the unusual career arc — medicine, Deadiron/music, or the non-linear path to software?"
+    }
+  ]
+}

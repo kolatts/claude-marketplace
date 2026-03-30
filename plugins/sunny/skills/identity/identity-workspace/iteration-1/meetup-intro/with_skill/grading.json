@@ -1,0 +1,20 @@
+{
+  "run_id": "meetup-intro-with_skill",
+  "expectations": [
+    {
+      "text": "under_75_words",
+      "passed": true,
+      "evidence": "67 words — under the 75-word limit"
+    },
+    {
+      "text": "mentions_unconventional_path",
+      "passed": true,
+      "evidence": "Contains 'left medical school in my fourth year' — direct and specific"
+    },
+    {
+      "text": "dry_wit_or_understatement",
+      "passed": true,
+      "evidence": "'which turns out to be a pretty good conversation starter' and 'the medical background I never finished using comes in surprisingly handy' — both understated and wry"
+    }
+  ]
+}
