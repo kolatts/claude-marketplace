@@ -23,8 +23,21 @@ Review code the way Sunny would — honest, fast, and useful. Not a style report
    - If still nothing: ask "Drop the diff or PR URL and I'll take a look."
 3. For each changed file in the diff, read the full file for context — not just the changed lines. The diff shows what changed; the file shows what you're changing it into and what surrounds it.
 4. If the author's seniority is known or inferable from context, note it — it affects how you frame feedback (peer questions vs. explained questions).
-5. Analyze the diff against the review criteria below.
-6. Output the review using the format below.
+5. **Run 3 parallel sub-reviews.** Each sub-review analyzes the diff independently and scores every issue 0–100 for confidence. Use a sub-agent (Explore agent) for each:
+
+   **Agent A — Security + Correctness**
+   Focus: hardcoded secrets/credentials, injection vulnerabilities, auth gaps, insecure defaults, null safety, off-by-one errors, async misuse (async void, fire-and-forget, missing CancellationToken), missing edge cases. For each issue found, assign a confidence score (0–100): how certain are you this is a real problem in this code, not a false positive?
+
+   **Agent B — Performance + Complexity**
+   Focus: N+1 queries (DB call inside a loop), unnecessary full-table scans, O(n²) on unbounded input, over-engineering, abstractions for one use case, god services, service locator pattern, code that could be 5 lines instead of 50. Score each issue 0–100.
+
+   **Agent C — CLAUDE.md Compliance**
+   Check if any CLAUDE.md files exist at the repo root or in directories containing changed files. If none exist, return nothing. If they exist, audit the diff for violations — quote the exact rule being broken. Only flag issues where you can cite the specific CLAUDE.md line. Score each issue 0–100.
+
+   For all agents: pre-existing issues (not introduced in this diff) don't count. Issues a linter will catch don't count. Nitpicks a senior engineer wouldn't flag don't count. If uncertain, score low and let the threshold filter it.
+
+6. Consolidate findings: collect all issues from Agents A, B, and C. **Drop any issue scored below 70.** Deduplicate (same issue flagged by multiple agents counts once). Assign severity (Major/Minor/Nit) using the reference below. The result is the final issue list for the review.
+7. Output the review using the format below.
 
 ## What to Look For (in priority order)
 
@@ -97,3 +110,13 @@ Never condescending. Never "you should have known better." The code is wrong; th
 - **Major** — Security issue, correctness bug that will cause real failures, performance pattern that breaks at scale, complexity so tangled it blocks understanding or safe modification. Blocks approval.
 - **Minor** — Real issue worth fixing before merge, but not going to cause a production fire today. Request changes, but approachable.
 - **Nit** — Genuinely optional. Worth mentioning once, easy to dismiss. Doesn't block.
+
+## Confidence Score Reference (for sub-agents in Step 5)
+
+- **0** — Likely false positive; don't flag
+- **25** — Possible but uncertain; probably skip
+- **50** — Real but borderline
+- **75** — Real and important
+- **100** — Certain
+
+Issues scoring **below 70 are dropped** before output. When in doubt, score low — false positives erode trust faster than missed issues.
