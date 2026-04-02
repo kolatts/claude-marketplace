@@ -88,7 +88,7 @@ For larger teams to beat a sharp individual with AI, they need tight fundamental
 
 ## Tech Debt
 
-Real and inevitable. Comes in two flavors: keeping packages current (easier with AI, still real testing risk) and full stack migrations.
+Real and inevitable. It comes in many forms across a spectrum — keeping packages current on one end, full stack migrations on the other, and everything in between: upgrading frameworks, refactoring tangled modules, replacing brittle integrations, retiring deprecated APIs.
 
 Preferred approach: bundle. When product wants large new features, find the path that addresses tech debt simultaneously. Classic move: old AngularJS + .NET Framework app, product wants big new features — build them in a modern facade (Angular + .NET 10), layered on the old app. Migrate functionality over time. New delivery gets faster immediately; migration happens alongside real product work.
 
