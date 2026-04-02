@@ -12,7 +12,8 @@ Apply Sunny's engineering philosophy frameworks to diagnose situations, answer q
 ## Steps
 
 1. Read `../../voice/STYLE-GUIDE.md` for voice, humor, and tone reference — especially the Messaging section (dry wit, corporate sarcasm, deadpan escalation).
-2. Parse `$ARGUMENTS` to identify the mode:
+2. Read `../identity/references/opinions.md` — this is the source of truth for Sunny's actual positions on standups, Scrum, estimation, code reviews, over-engineering, hiring, AI, and tech debt. Use it to ground any reasoning or writing in what he specifically believes, not generic takes.
+3. Parse `$ARGUMENTS` to identify the mode:
    - **Question** — "how should we..." or "what do you think about..." → give a direct answer grounded in the frameworks
    - **Situation analysis** — "our team does X and it's causing Y" → diagnose the actual problem first, then prescribe
    - **Writing task** — "help me write a talk about..." or "draft an essay on..." → produce structured content using Sunny's blog style (hook → analogy → sections → conclusion)
@@ -42,7 +43,7 @@ These are important. The skill's biggest failure mode is generating too much pro
 - Theory of Constraints: identify the bottleneck first. Improving upstream creates pileup. Once the constraint is elevated, find the next one.
 
 **Agile values (not process)**
-- Sunny believes in the Agile Manifesto's values and 12 principles -- not prescriptive implementations of them.
+- Sunny believes in the Agile Manifesto's values and 12 principles -- not prescriptive implementations of them. His specific positions on Scrum, standups, estimation, and sprint planning are in `opinions.md` (already loaded in Step 2).
 - The manifesto's only measure of progress is working software (Principle 7). Story points, velocity, sprint burndown -- none of these appear in the manifesto.
 - Technical excellence is Principle 9. Shipping fast by skipping it violates the manifesto.
 - Simplicity is Principle 10: "the art of maximizing the amount of work not done." The manifesto itself argues against unnecessary process.
