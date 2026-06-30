@@ -1,6 +1,6 @@
 ---
 name: sunny:architecture
-description: Apply Sunny Kolattukudy's architecture principles to design, review, or evaluate systems. Use this skill when Sunny asks "how should I structure X", "design a new module for Y", "review this architecture", "should this be a service?", "what's the right project structure for Z", "is this the right pattern?", or any question about system design, module boundaries, project layout, cloud hosting choices, or technology selection in .NET, Blazor, or Azure/AWS. Also trigger when Sunny shares a design and wants an opinionated read, or when code review feedback touches architectural decisions.
+description: Apply Sunny Kolattukudy's architecture principles to design, review, or evaluate systems. Use this skill when Sunny asks "how should I structure X", "design a new module for Y", "review this architecture", "should this be a service?", "what's the right project structure for Z", "is this the right pattern?", or any question about system design, module boundaries, project layout, cloud hosting choices, Azure resource naming, Bicep naming, Function App naming, or technology selection in .NET, Blazor, or Azure/AWS. Also trigger when Sunny shares a design and wants an opinionated read, or when code review feedback touches architectural decisions.
 ---
 
 <!--
@@ -147,6 +147,86 @@ Don't suggest unit testing pure mapping methods — there's no business logic to
 - IaC → Terraform
 
 When recommending hosting, state the reason — scale, cost, team familiarity, or existing infra.
+
+## Azure infrastructure naming scale
+
+Use deployed Imagile resources as the strongest convention:
+
+- Resource groups: `imagile-prod`, `imagile-qa`
+- App environment resources: `imagile-prod-api`, `imagile-prod-functions`, `imagile-prod-ui`, `imagile-prod-sql`, `imagile-prod-signalr`, `imagile-prod-key-vault`, `imagile-prod-identity`, `imagile-prod-dashboard`, `imagile-prod-cae`
+- Child or related resources keep the parent prefix: `imagile-prod-sql/imagile-prod-metabase`, `imagile-prod-functions-health`, `imagile-prod-api-health`
+- Azure-constrained names collapse separators: `imagileprodstorage`
+- Shared organization resources use shorter platform names when they are not app-environment specific: `imagile-keyvault`, `imagile-shared-law`, `imagilecontainers`, `imagile-comms`, `imagile-email`, `imagile-translator`
+
+Treat non-Imagile personal projects as weak evidence only. They can explain an exception, but they do not override the Imagile convention.
+
+**Preferred app environment pattern:**
+```
+<app>-<environment>-<role>
+```
+
+Examples: `imagile-prod-functions`, `imagile-prod-api`, `imagile-prod-ui`, `imagile-prod-sql`, `imagile-prod-key-vault`.
+
+**Resource group pattern:**
+```
+<app>-<environment>
+```
+
+**Storage accounts and other Azure resources that disallow hyphens:**
+```
+<app><environment><role>
+```
+
+Example: `imagileprodstorage`.
+
+**Shared organization or platform resources:**
+```
+<app>-<role>
+<app>-shared-<role>
+```
+
+Examples: `imagile-keyvault`, `imagile-shared-law`, `imagilecontainers`.
+
+**Role vocabulary:**
+- `api`
+- `functions`
+- `ui`
+- `sql`
+- `signalr`
+- `key-vault`
+- `identity`
+- `dashboard`
+- `cae`
+- `storage`
+- `ai` for Application Insights when the deployed convention already uses it
+- `law` for Log Analytics Workspace when space is tight or the deployed convention uses it
+
+Avoid Azure-type prefixes like `func-`, `rg-`, `st`, `kv`, or `appi` for Imagile-style app resources unless integrating into a repo that already consistently uses those prefixes. The Imagile convention reads like the product first, not the Azure catalog first.
+
+**Naming scale:**
+
+- **5 - Imagile convention:** Uses `<app>-<environment>-<role>` for app resources, `<app>-<environment>` for the resource group, deployed role vocabulary, and Azure constraints without changing the mental model. Examples: `imagile-prod-functions`, `imagile-prod-key-vault`, `imagileprodstorage`.
+- **4 - Acceptable with a reason:** Mostly follows app/environment/role ordering with a small resource-specific deviation for uniqueness, DNS, global scope, or Azure restrictions. Example: `imagile-prod-functions-health`.
+- **3 - Understandable but not preferred:** Clear name, but ordering or vocabulary drifts from Imagile convention. Acceptable for legacy resources, not new Bicep. Examples: `prod-imagile-functions`, `imagile-prod-func`.
+- **2 - Azure-prefix style:** Uses generic Azure abbreviations or type-first naming without a repo-local reason. Examples: `func-imagile-prod`, `rg-imagile-prod`, `stimagileprod`.
+- **1 - Ambiguous or misleading:** Omits app, environment, or role; uses a role that does not match the deployed service; or encodes implementation noise. Examples: `backend`, `prod-service`, `function1`, `centralus-prod-app`.
+
+For Azure Functions, prefer one Function App per app/environment named `<app>-<environment>-functions`; put multiple functions inside it. If a resource has a public DNS name or global uniqueness requirement, preserve the convention as far left as possible and put entropy at the end only when required.
+
+For infra naming reviews, include:
+
+```
+### Infra naming
+Score: [1-5]/5
+
+[Direct assessment.]
+
+Recommended names:
+- Resource group: `...`
+- Function App: `...`
+- Storage account: `...`
+- App Insights: `...`
+```
 
 ## Testing stack
 

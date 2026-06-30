@@ -1,6 +1,6 @@
 {
   "name": "sunny",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Personal developer workflow toolkit — smart commits, code review, project scaffolding, and writing in your voice",
   "author": {
     "name": "kolatts"
@@ -12,7 +12,9 @@
     "commit",
     "review",
     "scaffold",
-    "writing"
+    "writing",
+    "azure",
+    "infrastructure"
   ],
   "skills": "./skills/",
   "hooks": {
