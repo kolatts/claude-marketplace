@@ -4,13 +4,13 @@
   "description": "Personal Claude Code plugin marketplace by kolatts",
   "owner": { "name": "kolatts" },
   "repository": "https://github.com/kolatts/claude-marketplace",
-  "keywords": ["workflow", "productivity", "writing", "communication"],
+  "keywords": ["workflow", "productivity", "writing", "communication", "azure", "infrastructure"],
   "plugins": [
     {
       "name": "sunny",
       "source": "./plugins/sunny",
-      "description": "Personal developer workflow toolkit — commits, code review, scaffolding, and writing in your voice",
-      "keywords": ["workflow", "git", "writing", "scaffold", "review"]
+      "description": "Personal developer workflow toolkit — commits, code review, scaffolding, architecture, and writing in your voice",
+      "keywords": ["workflow", "git", "writing", "scaffold", "review", "azure", "infrastructure"]
     }
   ]
 }
