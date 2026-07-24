@@ -11,6 +11,18 @@
       "source": "./plugins/sunny",
       "description": "Personal developer workflow toolkit — commits, code review, scaffolding, architecture, and writing in your voice",
       "keywords": ["workflow", "git", "writing", "scaffold", "review", "azure", "infrastructure"]
+    },
+    {
+      "name": "tools",
+      "source": "./plugins/tools",
+      "description": "General-purpose utility skills — standalone tools for image processing, file manipulation, and other everyday tasks",
+      "keywords": ["utilities", "images", "background-removal", "file-processing"]
+    },
+    {
+      "name": "imagile-dev-tools",
+      "source": "./plugins/imagile-dev-tools",
+      "description": "Imagile developer tools — AI image generation via the OpenAI Images API and other team-specific utilities",
+      "keywords": ["imagile", "images", "openai", "image-generation", "ai"]
     }
   ]
 }
