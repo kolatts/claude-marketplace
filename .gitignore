@@ -1,23 +1,2 @@
-# OS
-.DS_Store
-Thumbs.db
-
-# Node
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# IDE
-.vscode/
-.idea/
-*.suo
-*.user
-
-# Misc
-*.log
-.env
-.env.local
-
-# Skill eval workspaces
-plugins/**/skills/**/*-workspace/
+__pycache__/
+*.py[cod]
