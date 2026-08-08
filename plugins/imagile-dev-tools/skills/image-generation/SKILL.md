@@ -135,6 +135,17 @@ On Windows/PowerShell, quote paths containing spaces. `${CLAUDE_PLUGIN_ROOT}` re
 - Pick a `--slug` that reads well as a folder name (`hero-banner`, `login-empty-state`) rather than letting a long prompt truncate into one.
 - The run folders are a record, not clutter to clean up. Leave `prompt.md` in place — it's how a good result gets reproduced later.
 
+## After generating: is this headed for the web?
+
+The API returns PNG, which is a fine master and a bad thing to ship. If the image is going onto a site or app, hand off to the `imagile-dev-tools:web-optimize` skill to produce AVIF/WebP derivatives — the run folder keeps the PNG master, and `web/` gets the served files.
+
+Assess before acting, don't optimize reflexively. A slide graphic, a print asset, a mockup, or an image the user just wants to look at should stay a PNG. That skill carries the full decision framework; the short version is that a web project plus a real payoff means yes, and anything else means mention it and move on.
+
+Two related calls at generation time:
+
+- If you already know the image is web-bound and no PNG master is needed, `--format webp --compression 80` skips a conversion step entirely.
+- If the ask is a logo, icon, or flat geometric mark **for a website**, say that SVG beats any generated raster before spending a generation on it. Image models don't produce clean vector output.
+
 ## Self-healing
 
 If the script misbehaves (a parameter the API now rejects, a new model id, a changed response shape), fix `scripts/generate_image.py` and this SKILL.md directly rather than only working around it for the current run.

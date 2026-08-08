@@ -60,6 +60,7 @@ Imagile developer tools — AI image generation via the OpenAI Images API and ot
 | Skill | Command | Description |
 |-------|---------|-------------|
 | Image Generation | `/imagile-dev-tools:image-generation` | Generate or edit images from a prompt with the OpenAI Images API (`gpt-image-2`) |
+| Web Optimize | `/imagile-dev-tools:web-optimize` | Convert images to AVIF/WebP with responsive `srcset` widths and a `<picture>` snippet |
 
 Set `OPENAI_API_KEY` (or `IMAGILE_OPENAI_API_KEY`) and the skill picks it up automatically; otherwise it asks for a key at use time.
 
@@ -72,6 +73,8 @@ Image work is kept in the repo under `.claude/image-generation/` — one dated f
     ├── prompt.md
     └── rocket-icon.png
 ```
+
+The API returns PNG — a good master, a bad thing to serve. Web Optimize derives AVIF/WebP from it when the image is actually going onto a page, and judges whether that's worth doing rather than converting everything by reflex.
 
 ## Customization
 
