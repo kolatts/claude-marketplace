@@ -1,6 +1,6 @@
 {
   "name": "imagile-dev-tools",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Imagile developer tools — AI image generation via the OpenAI Images API and other team-specific utilities",
   "author": {
     "name": "kolatts"

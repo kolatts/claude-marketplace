@@ -123,9 +123,20 @@ def picture_snippet(stem, results, fallback_path, base_url, sizes, alt):
     def url(p):
         return f"{base_url.rstrip('/')}/{p.name}" if base_url else p.name
 
+    # Order sources by what the encoders actually produced, not by reputation.
+    # AVIF usually wins, but not always — and <picture> takes the first supported
+    # match, so a mis-ordered list ships the bigger file to the better browser.
+    def full_width_bytes(fmt):
+        sizes = [r["bytes"] for r in results if r["format"] == fmt and r["role"] == "modern"]
+        return min(sizes) if sizes else float("inf")
+
+    modern_formats = sorted({r["format"] for r in results if r["role"] == "modern"},
+                            key=full_width_bytes)
+
     lines = ["<picture>"]
-    for fmt in ("avif", "webp"):
-        entries = [r for r in results if r["format"] == fmt]
+    for fmt in modern_formats:
+        entries = sorted([r for r in results if r["format"] == fmt and r["role"] == "modern"],
+                         key=lambda r: r["width"])
         if not entries:
             continue
         srcset = ", ".join(f"{url(e['path'])} {e['width']}w" for e in entries)
@@ -204,6 +215,8 @@ def process(src, args, formats):
     best = min(modern or results, key=lambda r: r["bytes"])
     saved = 100 - 100 * best["bytes"] / original_size
     print(f"  -> {saved:.0f}% smaller at full width ({best['format']})")
+    if len(modern) > 1 and best["format"] != "avif" and any(r["format"] == "avif" for r in modern):
+        print("  -> AVIF lost to WebP on this image; the snippet lists WebP first")
 
     if args.snippet and fallback_path is not None:
         print("\n" + picture_snippet(src.stem, results, fallback_path,
