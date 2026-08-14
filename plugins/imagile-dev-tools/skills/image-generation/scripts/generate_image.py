@@ -113,7 +113,8 @@ def write_manifest(directory, params, style_path, outputs, edits):
         meta["style_file"] = str(style_path).replace("\\", "/")
     if edits:
         meta["edited_from"] = [str(p).replace("\\", "/") for p in edits]
-    meta["outputs"] = [p.name for p in outputs]
+    if outputs:  # a prepared-but-unfinished run has none yet
+        meta["outputs"] = [p.name for p in outputs]
 
     lines = ["---"]
     for key, value in meta.items():
@@ -297,7 +298,9 @@ def main():
     for path in written:
         print(f"[ok] {path}")
     if directory is not None:
-        print(f"[ok] {write_manifest(directory, params, style_used, written, edits)}")
+        # `source` is manifest-only bookkeeping — the API never sees it.
+        meta = {**params, "source": "openai-api"}
+        print(f"[ok] {write_manifest(directory, meta, style_used, written, edits)}")
     if style_used:
         print(f"Style applied from {style_used}")
 
