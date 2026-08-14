@@ -49,7 +49,7 @@ General-purpose utility skills — standalone tools for image processing, file m
 
 ### imagile-dev-tools
 
-Imagile developer tools — AI image generation via the OpenAI Images API and other team-specific utilities.
+Imagile developer tools — AI image generation via the ChatGPT UI or the OpenAI Images API, and other team-specific utilities.
 
 ```bash
 /plugin install imagile-dev-tools@kolatts-marketplace
@@ -59,12 +59,12 @@ Imagile developer tools — AI image generation via the OpenAI Images API and ot
 
 | Skill | Command | Description |
 |-------|---------|-------------|
-| Image Generation | `/imagile-dev-tools:image-generation` | Generate or edit images from a prompt with the OpenAI Images API (`gpt-image-2`) |
+| Image Generation | `/imagile-dev-tools:image-generation` | Generate or edit images from a prompt — through the ChatGPT UI when Claude in Chrome is connected, otherwise the OpenAI Images API (`gpt-image-2`) |
 | Web Optimize | `/imagile-dev-tools:web-optimize` | Convert images to AVIF/WebP with responsive `srcset` widths and a `<picture>` snippet |
 
-Set `OPENAI_API_KEY` (or `IMAGILE_OPENAI_API_KEY`) and the skill picks it up automatically; otherwise it asks for a key at use time.
+Image generation takes the browser route first: with [Claude in Chrome](https://code.claude.com/docs/en/chrome) connected (`claude --chrome`), it drives chatgpt.com in a logged-in tab, so images come out of the ChatGPT plan rather than being billed per image. It falls back to the API — transparent backgrounds, exact pixel sizes, masked edits and batches always go that way. Set `OPENAI_API_KEY` (or `IMAGILE_OPENAI_API_KEY`) and the skill picks it up automatically; otherwise it asks for a key at use time.
 
-Image work is kept in the repo under `.claude/image-generation/` — one dated folder per run holding `prompt.md` and its output, plus a shared `style.md` whose palette and design rules are folded into every prompt:
+Image work is kept in the repo under `.claude/image-generation/` regardless of route — one dated folder per run holding `prompt.md` and its output, plus a shared `style.md` whose palette and design rules are folded into every prompt:
 
 ```
 .claude/image-generation/
@@ -74,7 +74,7 @@ Image work is kept in the repo under `.claude/image-generation/` — one dated f
     └── rocket-icon.png
 ```
 
-The API returns PNG — a good master, a bad thing to serve. Web Optimize derives AVIF/WebP from it when the image is actually going onto a page, and judges whether that's worth doing rather than converting everything by reflex.
+Either route returns PNG — a good master, a bad thing to serve. Web Optimize derives AVIF/WebP from it when the image is actually going onto a page, and judges whether that's worth doing rather than converting everything by reflex.
 
 ## Customization
 
