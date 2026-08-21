@@ -35,6 +35,9 @@ State the point, not the subject. "It's Fast" beats "Performance Considerations.
 - Any CTA that ends with an exclamation point
 - Hedges: "I think," "perhaps," "it seems like," "many would argue"
 - Repeated restatements of the thesis ("As we've seen above...")
+- Closing summary paragraphs ("In conclusion," "To wrap up") — end on the last point instead
+- Em dashes — use a comma, colon, or new sentence
+- Litotes ("not bad," "no small feat," "not uncommon") — say it directly
 - ASCII diagrams
 - Code blocks unless one short specific example genuinely earns its space
 - Concept tables — if it could be prose, make it prose
