@@ -15,7 +15,7 @@ Personal Claude Code plugin marketplace — a curated collection of plugins for 
 A personal developer workflow toolkit. Skills that cover commits, code review, project scaffolding, and writing in your voice.
 
 ```bash
-/plugin install sunny@kolatts-marketplace
+/plugin install sunny@claude-marketplace
 ```
 
 #### Skills
@@ -38,7 +38,7 @@ A personal developer workflow toolkit. Skills that cover commits, code review, p
 General-purpose utility skills — standalone tools for image processing, file manipulation, and other everyday tasks.
 
 ```bash
-/plugin install tools@kolatts-marketplace
+/plugin install tools@claude-marketplace
 ```
 
 #### Skills
@@ -52,7 +52,7 @@ General-purpose utility skills — standalone tools for image processing, file m
 Imagile developer tools — AI image generation via the ChatGPT UI or the OpenAI Images API, and other team-specific utilities.
 
 ```bash
-/plugin install imagile-dev-tools@kolatts-marketplace
+/plugin install imagile-dev-tools@claude-marketplace
 ```
 
 #### Skills
