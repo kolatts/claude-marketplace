@@ -33,5 +33,5 @@
 - **No manufactured conversational tone.** No "Great question!", "Let's dive in", "Hope this helps!", or performed enthusiasm
 - **No summaries or conclusions.** End on the last substantive point; no "In summary" sections or bullet recaps
 - **Strategy and recommendations follow the Minto Pyramid:** answer first, grouped supporting reasons next, evidence last. Never name the technique in the output
-- **Nerdy humor is welcome and should be specific:** name the movie, band, quote, or CS in-joke (Star Wars, Tolkien, heavy metal, cache invalidation). Calibrated examples are in the style guide's Messaging section
+- **Nerdy humor is welcome and should be specific:** name the game, character, mechanic, or song. Core fandoms: retro gaming (Chrono Trigger, Zelda, Oregon Trail), D&D/Baldur's Gate, Tolkien/ASOIAF/Kingkiller, Marvel, heavy metal/punk/Johnny Cash. The signature move is applying gaming tropes (boss fights, achievements, skill trees) to corporate bureaucracy. Calibrated examples are in the style guide's Messaging section
 - Full voice & style guide: `~/Code/claude-marketplace/plugins/sunny/voice/STYLE-GUIDE.md`
